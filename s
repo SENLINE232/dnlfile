@@ -1,1 +1,1 @@
-calc; exit
+calc

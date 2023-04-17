@@ -1,2 +1,1 @@
-calc
-exit
+calc; exit

